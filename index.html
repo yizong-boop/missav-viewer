@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MISS·AV 私人观影</title>
+  <meta name="description" content="无广告 · 纯净的视频浏览站(自用)">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>">
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <div class="logo">
+        <span class="mark">M</span>
+        <span>MISS·AV <span class="sub">PRIVATE</span></span>
+      </div>
+      <div class="search-box">
+        <input id="search-input" type="search" placeholder="搜索番号 / 标题 / 演员 / 系列…" autocomplete="off">
+        <span class="icon">⌕</span>
+        <button class="clear" id="search-clear" title="清除">✕</button>
+      </div>
+      <div class="meta-info" id="meta-info"></div>
+    </div>
+    <nav class="tabs" id="tabs"></nav>
+  </header>
+
+  <main>
+    <div class="section-title" id="section-title"></div>
+    <div class="grid" id="grid"></div>
+    <div id="state"></div>
+  </main>
+
+  <footer>
+    <p>数据来自 MissAV 公开推荐接口 · 每 6 小时自动刷新 · 点击卡片前往原站播放</p>
+    <p>仅供个人使用 · <a href="https://missav.ws" target="_blank" rel="noopener">missav.ws</a></p>
+  </footer>
+
+  <!-- 详情弹窗 -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal" id="modal"></div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
